@@ -12,13 +12,13 @@ require("nvim-tree").setup({
   },
   update_focused_file = {
     enable = true,
-    update_cwd = false
+    update_cwd = true
   },
   renderer = {
     group_empty = true,
   },
   filters = {
-    custom = { '^.git$', '^node_modules$' }
+    custom = { '^.git$', '^node_modules$', '^venv$' }
   },
   git = {
     enable = true
