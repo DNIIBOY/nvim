@@ -33,6 +33,8 @@ return require('packer').startup(function(use)
 
   use 'joshdick/onedark.vim'
 
+  use 'github/copilot.vim'
+
   use 'rmagatti/alternate-toggler'
   use 'windwp/nvim-autopairs'
   use 'mg979/vim-visual-multi'
