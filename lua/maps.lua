@@ -10,6 +10,7 @@ keymap.set('n', '<C-j>', '<C-w>j')
 keymap.set('n', '<C-k>', '<C-w>k')
 keymap.set('n', '<C-l>', '<C-w>l')
 
+keymap.set('n', '<C-s>', ':%s//g<Left><Left>')
 keymap.set('n', '<Esc>', ':noh <CR>', { silent = true })
 
 keymap.set('t', '<Esc>', '<C-\\><C-N>')
