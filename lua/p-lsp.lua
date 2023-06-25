@@ -53,13 +53,13 @@ lsp.on_attach(function(_, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 
   -- format on save
-  vim.api.nvim_create_autocmd('BufWritePre', {
-    group = vim.api.nvim_create_augroup('LspFormatting', { clear = true }),
-    buffer = bufnr,
-    callback = function()
-      vim.lsp.buf.format()
-    end
-  })
+  -- vim.api.nvim_create_autocmd('BufWritePre', {
+  --   group = vim.api.nvim_create_augroup('LspFormatting', { clear = true }),
+  --   buffer = bufnr,
+  --   callback = function()
+  --     vim.lsp.buf.format()
+  --   end
+  -- })
 end)
 
 lsp.setup()
