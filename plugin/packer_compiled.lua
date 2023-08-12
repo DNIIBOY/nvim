@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\danie\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\alternate-toggler",
     url = "https://github.com/rmagatti/alternate-toggler"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\danie\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "C:\\Users\\danie\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
@@ -144,6 +149,16 @@ _G.packer_plugins = {
     path = "C:\\Users\\danie\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "C:\\Users\\danie\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
+  },
+  ["nvim-ts-rainbow"] = {
+    loaded = true,
+    path = "C:\\Users\\danie\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ts-rainbow",
+    url = "https://github.com/p00f/nvim-ts-rainbow"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "C:\\Users\\danie\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
@@ -163,6 +178,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\danie\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["scope.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\danie\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\scope.nvim",
+    url = "https://github.com/tiagovla/scope.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

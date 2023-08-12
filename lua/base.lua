@@ -28,6 +28,8 @@ vim.bo.autoread = true
 opt.signcolumn = 'yes'
 opt.list = true
 
+opt.termguicolors = true
+
 vim.api.nvim_create_autocmd('TextYankPost', {
   callback = function()
     vim.highlight.on_yank({

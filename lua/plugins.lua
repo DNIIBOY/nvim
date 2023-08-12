@@ -56,4 +56,7 @@ return require('packer').startup(function(use)
     use 'nvim-treesitter/nvim-treesitter'
     use 'windwp/nvim-ts-autotag'
     use 'p00f/nvim-ts-rainbow'
+
+    use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+    use "tiagovla/scope.nvim"
 end)
