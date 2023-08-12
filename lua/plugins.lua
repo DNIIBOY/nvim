@@ -42,6 +42,7 @@ return require('packer').startup(function(use)
     use 'tpope/vim-surround'
     use 'tpope/vim-commentary'
     use 'tpope/vim-repeat'
+    use 'tpope/vim-fugitive'
 
     use {
         'nvim-lualine/lualine.nvim',
