@@ -59,5 +59,6 @@ return require('packer').startup(function(use)
     use 'p00f/nvim-ts-rainbow'
 
     use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
-    use "tiagovla/scope.nvim"
+    use 'tiagovla/scope.nvim'
+    use 'lewis6991/gitsigns.nvim'
 end)
