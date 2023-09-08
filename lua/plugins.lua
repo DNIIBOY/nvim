@@ -62,4 +62,5 @@ return require('packer').startup(function(use)
     use 'tiagovla/scope.nvim'
     use 'lewis6991/gitsigns.nvim'
     use 'stevearc/dressing.nvim'
+    use 'stevearc/vim-arduino'
 end)
