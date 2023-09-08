@@ -61,4 +61,5 @@ return require('packer').startup(function(use)
     use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
     use 'tiagovla/scope.nvim'
     use 'lewis6991/gitsigns.nvim'
+    use 'stevearc/vim-arduino'
 end)
