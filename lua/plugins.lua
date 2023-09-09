@@ -63,4 +63,5 @@ return require('packer').startup(function(use)
     use 'lewis6991/gitsigns.nvim'
     use 'stevearc/dressing.nvim'
     use 'stevearc/vim-arduino'
+    use 'wintermute-cell/gitignore.nvim'
 end)
