@@ -64,4 +64,8 @@ return require('packer').startup(function(use)
     use 'stevearc/dressing.nvim'
     use 'stevearc/vim-arduino'
     use 'wintermute-cell/gitignore.nvim'
+    use {
+        'folke/todo-comments.nvim',
+        requires = { { 'nvim-lua/plenary.nvim' } },
+    }
 end)
