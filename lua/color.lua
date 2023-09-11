@@ -1,6 +1,8 @@
 vim.g.onedark_diagnostic_line_highlight = 1
 vim.cmd('colorscheme onedark')
 
+vim.cmd([[highlight DiagnosticHint guifg=#10b981]])
+
 vim.fn.sign_define({
     {
         name = 'DiagnosticSignError',
