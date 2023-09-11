@@ -29,7 +29,10 @@ opt.signcolumn = 'yes'
 opt.list = true
 
 opt.termguicolors = true
-opt.shell = 'powershell.exe'
+
+if vim.fn.has('win32') == 1 then
+    opt.shell = 'powershell.exe'
+end
 
 vim.api.nvim_create_autocmd('TextYankPost', {
     callback = function()
