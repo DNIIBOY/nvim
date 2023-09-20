@@ -69,4 +69,5 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } },
     }
     use 'segeljakt/vim-silicon'
+    use 'tommcdo/vim-exchange'
 end)
