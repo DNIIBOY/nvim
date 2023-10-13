@@ -58,7 +58,7 @@ return require('packer').startup(function(use)
     use 'windwp/nvim-ts-autotag'
     use 'p00f/nvim-ts-rainbow'
 
-    use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
+    use { 'akinsho/bufferline.nvim', tag = '*', requires = 'nvim-tree/nvim-web-devicons' }
     use 'tiagovla/scope.nvim'
     use 'lewis6991/gitsigns.nvim'
     use 'stevearc/dressing.nvim'
@@ -70,4 +70,6 @@ return require('packer').startup(function(use)
     }
     use 'segeljakt/vim-silicon'
     use 'tommcdo/vim-exchange'
+    use 'mfussenegger/nvim-dap'
+    use { 'rcarriga/nvim-dap-ui', requires = { 'mfussenegger/nvim-dap' } }
 end)

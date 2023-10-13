@@ -6,6 +6,7 @@ require('text')
 
 require('p-arduino')
 require('p-bufferline')
+require('p-dap')
 require('p-gitsigns')
 require('p-lsp')
 require('p-lualine')
