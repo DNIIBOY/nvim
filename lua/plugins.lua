@@ -73,14 +73,20 @@ return require('packer').startup(function(use)
     use 'mfussenegger/nvim-dap'
     use { 'rcarriga/nvim-dap-ui', requires = { 'mfussenegger/nvim-dap' } }
     use({
-      'utilyre/barbecue.nvim',
-      tag = '*',
-      requires = {
-        'SmiteshP/nvim-navic',
-        'nvim-tree/nvim-web-devicons', -- optional dependency
-      },
-      config = function()
-        require('barbecue').setup()
-      end,
+        'utilyre/barbecue.nvim',
+        tag = '*',
+        requires = {
+            'SmiteshP/nvim-navic',
+            'nvim-tree/nvim-web-devicons', -- optional dependency
+        },
+        config = function()
+            require('barbecue').setup()
+        end,
+    })
+    use({
+        'folke/neodev.nvim',
+        config = function()
+            require('neodev').setup()
+        end
     })
 end)
