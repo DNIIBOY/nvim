@@ -1,7 +1,9 @@
-vim.g.onedark_diagnostic_line_highlight = 1
-vim.cmd('colorscheme onedark')
+vim.cmd [[colorscheme tokyonight]]
 
-vim.cmd([[highlight DiagnosticHint guifg=#10b981]])
+vim.cmd([[highlight DiagnosticVirtualTextError guibg=#2428w3b]])
+vim.cmd([[highlight DiagnosticVirtualTextWarn guibg=#2428w3b]])
+vim.cmd([[highlight DiagnosticVirtualTextInfo guibg=#2428w3b]])
+vim.cmd([[highlight DiagnosticVirtualTextHint guibg=#2428w3b]])
 
 vim.fn.sign_define({
     {

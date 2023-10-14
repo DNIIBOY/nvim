@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
             { 'L3MON4D3/LuaSnip' },     -- Required
         }
     }
+    use 'nvim-tree/nvim-web-devicons'
     use {
         'nvim-tree/nvim-tree.lua',
         requires = {
@@ -31,8 +32,7 @@ return require('packer').startup(function(use)
         tag = 'nightly'
     }
 
-    use 'joshdick/onedark.vim'
-
+    use 'folke/tokyonight.nvim'
     use 'github/copilot.vim'
 
     use 'rmagatti/alternate-toggler'
