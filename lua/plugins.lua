@@ -72,4 +72,15 @@ return require('packer').startup(function(use)
     use 'tommcdo/vim-exchange'
     use 'mfussenegger/nvim-dap'
     use { 'rcarriga/nvim-dap-ui', requires = { 'mfussenegger/nvim-dap' } }
+    use({
+      'utilyre/barbecue.nvim',
+      tag = '*',
+      requires = {
+        'SmiteshP/nvim-navic',
+        'nvim-tree/nvim-web-devicons', -- optional dependency
+      },
+      config = function()
+        require('barbecue').setup()
+      end,
+    })
 end)
