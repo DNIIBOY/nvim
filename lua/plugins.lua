@@ -39,10 +39,17 @@ return require('packer').startup(function(use)
     use 'windwp/nvim-autopairs'
     use 'mg979/vim-visual-multi'
     use 'gcmt/wildfire.vim'
-    use 'tpope/vim-surround'
     use 'tpope/vim-commentary'
     use 'tpope/vim-repeat'
     use 'tpope/vim-fugitive'
+
+    use({
+        'kylechui/nvim-surround', -- This supports dsf
+        tag = '*',
+        config = function()
+            require('nvim-surround').setup()
+        end
+    })
 
     use {
         'nvim-lualine/lualine.nvim',
