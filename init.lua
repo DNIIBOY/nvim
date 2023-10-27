@@ -1,7 +1,8 @@
 require('base')
+require('color')
+require('p-lint')
 require('maps')
 require('plugins')
-require('color')
 require('text')
 
 require('p-arduino')
