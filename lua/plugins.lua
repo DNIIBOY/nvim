@@ -98,4 +98,11 @@ return require('packer').startup(function(use)
             require('neodev').setup()
         end
     })
+    use {
+        'ThePrimeagen/refactoring.nvim',
+        requires = {
+            { 'nvim-lua/plenary.nvim' },
+            { 'nvim-treesitter/nvim-treesitter' }
+        }
+    }
 end)
