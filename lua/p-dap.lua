@@ -1,5 +1,5 @@
 -- local python_path = os.getenv("PYTHON_PATH")
-local python_path = 'C:\\Python311\\python.exe'
+local python_path = 'C:\\Python312\\python.exe'
 local dap, dapui = require('dap'), require('dapui')
 
 dapui.setup()
