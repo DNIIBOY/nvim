@@ -38,7 +38,6 @@ return require('packer').startup(function(use)
 
     use 'rmagatti/alternate-toggler'
     use 'windwp/nvim-autopairs'
-    use 'mg979/vim-visual-multi'
     use 'gcmt/wildfire.vim'
     use 'tpope/vim-commentary'
     use 'tpope/vim-repeat'
@@ -66,12 +65,9 @@ return require('packer').startup(function(use)
     use 'windwp/nvim-ts-autotag'
     use 'p00f/nvim-ts-rainbow'
 
-    use { 'akinsho/bufferline.nvim', tag = '*', requires = 'nvim-tree/nvim-web-devicons' }
-    use 'tiagovla/scope.nvim'
     use 'lewis6991/gitsigns.nvim'
     use 'stevearc/dressing.nvim'
     use 'stevearc/vim-arduino'
-    use 'wintermute-cell/gitignore.nvim'
     use {
         'folke/todo-comments.nvim',
         requires = { { 'nvim-lua/plenary.nvim' } },
@@ -103,6 +99,13 @@ return require('packer').startup(function(use)
         requires = {
             { 'nvim-lua/plenary.nvim' },
             { 'nvim-treesitter/nvim-treesitter' }
+        }
+    }
+    use {
+        'ThePrimeagen/harpoon',
+        branch = 'harpoon2',
+        requires = {
+            { 'nvim-lua/plenary.nvim' },
         }
     }
 end)

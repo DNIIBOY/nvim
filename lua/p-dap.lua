@@ -51,11 +51,6 @@ keymap.set('n', '<Leader>b', function() dap.toggle_breakpoint() end)
 keymap.set('n', '<Leader>B', function() dap.set_breakpoint() end)
 keymap.set('n', '<Leader>dk', function() dap.close() dapui.close() end)
 
-keymap.set('n', '<Leader>lp', function()
-    dap.set_breakpoint(
-        nil, nil, vim.fn.input('Log point message: '))
-end)
-
 keymap.set('n', '<Leader>dr', function() require('dap').repl.open() end)
 
 dap.listeners.after.event_initialized['dapui_config'] = function()
