@@ -1,4 +1,4 @@
-vim.cmd [[colorscheme tokyonight]]
+vim.cmd [[colorscheme tokyonight-night]]
 
 vim.cmd([[highlight DiagnosticVirtualTextError guibg=#2428w3b]])
 vim.cmd([[highlight DiagnosticVirtualTextWarn guibg=#2428w3b]])
