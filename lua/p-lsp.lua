@@ -11,6 +11,19 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
     ['<C-Space>'] = cmp.mapping.complete(),
 })
 
+cmp.setup({
+    snippet = {
+        expand = function(args)
+            require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+        end,
+    },
+    mapping = cmp_mappings,
+})
+
+cmp.setup.filetype('sql,mysql,plsql', {
+    sources = { { name = 'vim-dadbod-completion' } }
+})
+
 lsp.set_preferences({
     suggest_lsp_servers = true,
     sign_icons = {
